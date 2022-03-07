@@ -1,0 +1,319 @@
+/* ------------------------------------------------------- */
+/* Imports ----------------------------------------------- */
+/* ------------------------------------------------------- */
+
+/* @import url('@/assets/Fonts/fonts.css'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Big+Shoulders+Stencil+Display:wght@700;800;900&family=Big+Shoulders+Text:wght@400;500;600;700&family=Caveat:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Dancing+Script:wght@400;500;600;700&family=Fira+Code:wght@400;500;692&family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,800&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Oswald:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Raleway:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Satisfy&display=swap'); */
+
+/* ------------------------------------------------------- */
+/* LAYOUT ------------------------------------------------ */
+/* ------------------------------------------------------- */
+
+:root {
+  /* >>= Breakpoints =<< */
+  --width_mobile: 576px;
+  --width_tablet: 768px;
+  --width_desktop: 992px;
+  --width_hd: 1200px;
+
+  /* >>= Space =<< */
+  --global--spacer--sm: 0.5rem;
+  --global--spacer--md: 1rem;
+  --global--spacer--lg: 2rem;
+
+  /* >>= Multipliers =<< */
+  --space-multiplier: 1;
+  --font-multiplier: 1.5;
+  --padding-multiplier: 1em;
+}
+
+/* ------------------------------------------------------- */
+/* FONT -------------------------------------------------- */
+/* ------------------------------------------------------- */
+:root {
+  /* >>= Family =<< */
+  --font_display_1: 'Big Shoulders Stencil Display', cursive;
+  --font_display_2: 'Big Shoulders Display', cursive;
+  --font_display_3: 'Hepta Slab', cursive;
+  --font_handwriting_1: 'Dancing Script', cursive;
+  --font_handwriting_2: 'Satisfy', cursive;
+  --font_handwriting_3: 'Caveat', cursive;
+  --font_monospace_1: 'JetBrains Mono', monospace;
+  --font_monospace_2: 'Fira Code', monospace;
+  --font_sans_1: 'Big Shoulders Text', cursive;
+  --font_sans_2: 'Josefin Sans', sans-serif;
+  --font_sans_3: 'Oswald', sans-serif;
+  --font_serif_1: 'Playfair Display', serif;
+  --font_serif_2: 'Lora', serif;
+  --font_serif_3: 'Cormorant Garamond', serif;
+
+  /* >>= Size =<< */
+  --global--main-title--FontSize: 2rem;
+  --global--secondary-title--FontSize: 1.8rem;
+  --global--body--FontSize: 1rem;
+  --font_size_xs: 0.75rem;
+  --font_size_sm: 0.875rem;
+  --font_size_md: 1rem;
+  --font_size_lg: 1.5rem;
+  --font_size_xl: 3rem;
+  --font_size_xx: 5rem;
+
+  /* >>= Line Height =<< */
+  --line_height_xs: 1rem;
+  --line_height_sm: 1.25rem;
+  --line_height_md: 1.5rem;
+  --line_height_lg: 2rem;
+  --line_height_xl: 2.5rem;
+  --line_height_xx: 5rem;
+}
+
+/* ------------------------------------------------------- */
+/* THEME ------------------------------------------------- */
+/* ------------------------------------------------------- */
+
+:root {
+  /* Color */
+  --global--hover--BackgroundColor: #ccc;
+
+  /* >>= COLORS =<< */
+  --color_light_1: WhiteSmoke;
+  --color_light_2: Bisque;
+  --color_light_3: Tan;
+  --color_light_t1: rgba(245, 245, 245, 0.75);
+  --color_light_t2: rgb(255, 228, 196, 0.75);
+  --color_light_t3: rgb(210, 180, 140, 0.75);
+  --color_dark_1: Black;
+  --color_dark_2: #111213;
+  --color_dark_3: rgb(2, 12, 16);
+  --color_dark_1t: rgba(2, 12, 16, 0.9);
+  --color_dark_2t: rgba(47, 79, 79, 0.75);
+  --color_dark_3t: rgba(19, 0, 0, 0.75);
+  --color_accent_1: DarkTurquoise;
+  --color_accent_2: Chartreuse;
+  --color_accent_3: Maroon;
+
+  /* >>= THEMES =<< */
+  /* Minimal Yet Warm */
+  --color-1--myw: #e1e7dc;
+  --color-2--myw: #d8c3a5;
+  --color-3--myw: #8e8d8a;
+  --color-4--myw: #e98074;
+  --color-5--myw: #e85a4f;
+
+  /* Red & Teal */
+  --primary-color: #e57373;
+  --primary-color--light: #ffa4a2;
+  --primary-color--dark: #af4448;
+  --secondary-color: #4db6ac;
+  --secondary-color--light: #82e9de;
+  --secondary-color--dark: ##00867d;
+
+  --text_high: rgba(0, 0, 0, 0.87);
+  --text_medium: rgba(0, 0, 0, 0.6);
+  --text_disabled: rgba(0, 0, 0, 0.38);
+
+  --light_background: var(--color_dark_2);
+  --light_foreground: var(--color_light_2);
+  --light_accent: var(--color_accent_3);
+
+  --primary-color: var(--color_5);
+  --primary-color--Text: white;
+  --primary-variant: var(--color_4);
+  --primary-variant--Text: var(--color_3);
+  --secondary_color: var(--color_2);
+  --secondary_variant: var(--color_4);
+  --secondary_foreground: var(--color_2);
+  --background_color_1: red;
+  --background-color--2: var(--color_1);
+  --text_high: rgba(0, 0, 0, 0.87);
+  --text_medium: rgba(0, 0, 0, 0.6);
+  --text_disabled: rgba(0, 0, 0, 0.38);
+
+  --hover-light-color: var(--color_light_2);
+  --hover-dark-color: var(--primary-background-color);
+  --color_dark_2g: linear-gradient(
+    /* 0deg, */ var(--color_dark_1) 0%,
+    var(--color_dark_2) 19%,
+    var(--color_dark_2) 34%,
+    var(--color_dark_2) 47%,
+    var(--color_dark_2) 56.5%,
+    var(--color_dark_2) 65%,
+    var(--color_dark_2) 73%,
+    var(--color_dark_2) 80.2%,
+    var(--color_dark_2) 86.1%,
+    var(--color_dark_2) 91%,
+    var(--color_dark_2) 95.2%,
+    var(--color_dark_2) 98.2%,
+    var(--color_dark_2) 100%
+  );
+  --color_dark_3g: linear-gradient(
+    var(--color_dark_1) 0%,
+    var(--color_accent_3) 19%,
+    var(--color_accent_3) 34%,
+    var(--color_accent_3) 47%,
+    var(--color_accent_3) 56.5%,
+    var(--color_accent_3) 65%,
+    var(--color_accent_3) 73%,
+    var(--color_accent_3) 80.2%,
+    var(--color_accent_3) 86.1%,
+    var(--color_accent_3) 91%,
+    var(--color_accent_3) 95.2%,
+    var(--color_accent_3) 98.2%,
+    var(--color_accent_3) 100%
+  );
+  --color_scrim: linear-gradient(
+    hsl(0, 0%, 0%) 0%,
+    hsla(0, 0%, 0%, 0.738) 19%,
+    hsla(0, 0%, 0%, 0.541) 34%,
+    hsla(0, 0%, 0%, 0.382) 47%,
+    hsla(0, 0%, 0%, 0.278) 56.5%,
+    hsla(0, 0%, 0%, 0.194) 65%,
+    hsla(0, 0%, 0%, 0.126) 73%,
+    hsla(0, 0%, 0%, 0.075) 80.2%,
+    hsla(0, 0%, 0%, 0.042) 86.1%,
+    hsla(0, 0%, 0%, 0.021) 91%,
+    hsla(0, 0%, 0%, 0.008) 95.2%,
+    hsla(0, 0%, 0%, 0.002) 98.2%,
+    hsla(0, 0%, 0%, 0) 100%
+  );
+  --transition: background-color 0.25s, color 0.25s;
+
+  /* >>= MISC =<< */
+}
+
+/* ------------------------------------------------------- */
+/* THEME ------------------------------------------------- */
+/* ------------------------------------------------------- */
+
+:root {
+  --color-surface1: #e6e6e6;
+  --color-surface2: #f2f2f2;
+  --color-surface3: #ffffff;
+  --color-element1: #111111;
+  --color-element2: #222222;
+  --color-element3: #333333;
+  --color-elementInverse: #eee;
+  --color-primary: #d0332b;
+  --color-secondary: #48b1b4;
+  --color-accent: #fff7d6;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  :root {
+    --color-surface1: #383838;
+    --color-surface2: #17242c;
+    --color-surface3: #404040;
+    --color-element1: #eeeeee;
+    --color-element2: #dddddd;
+    --color-element3: #cccccc;
+    --color-elementInverse: #111;
+    --color-primary: #ed9b98;
+    --color-secondary: #98ebee;
+    --color-accent: #eeee98;
+    --color-text--Emphasized: rgba(255, 255, 255, 0.87);
+    --color-text--Normal: rgba(255, 255, 255, 0.6);
+    --color-text--Disabled: rgba(255, 255, 255, 0.38);
+  }
+}
+
+/*
+:root {
+  --theme-color--Primary: var(--color_5);
+  --theme-color--Secondary: var(--color_5);
+  --theme-color--Accent: var(--color_5);
+  --theme-color--PrimaryText: var(--color_5);
+  --theme-color--Secondary: var(--color_5);
+  --theme-color--Accent: var(--color_5);
+
+  --theme-primary--TextColor: white;
+  --theme-primary--Variant: var(--color_4);
+  --theme-primary-variant--Text: var(--color_3);
+  --theme-secondary_color: var(--color_2);
+  --theme-secondary_variant: var(--color_4);
+  --theme-secondary_foreground: var(--color_2);
+  --theme-background_color_1: red;
+  --theme-background-color--2: var(--color_1);
+  --theme-text_high: rgba(0, 0, 0, 0.87);
+  --theme-text_medium: rgba(0, 0, 0, 0.6);
+  --theme-text_disabled: rgba(0, 0, 0, 0.38);
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  :root {
+    --primary-color: #720d5d;
+    --primary-color--Text: white;
+    --primary-variant: var(--color_4);
+    --primary-variant--Text: var(--color_3);
+    --secondary_color: var(--color_2);
+    --secondary_variant: var(--color_4);
+    --secondary_foreground: var(--color_2);
+    --background_color_1: #5d1049;
+    --background-color--2: var(--color_1);
+    --text_high: rgba(0, 0, 0, 0.87);
+    --text_medium: rgba(0, 0, 0, 0.6);
+    --text_disabled: rgba(0, 0, 0, 0.38);
+  }
+} */
+
+/* ------------------------------------------------------- */
+/* RESPONSIVENESS ---------------------------------------- */
+/* ------------------------------------------------------- */
+@media (min-width: var(--breakpoint_mobile)) {
+  :root {
+    --spacing-multiplier: 2;
+    --headings-multiplier: 1.5;
+  }
+}
+@media (min-width: var(--breakpoint_tablet)) {
+  :root {
+    --spacing-multiplier: 2;
+    --headings-multiplier: 1.5;
+  }
+}
+@media (min-width: var(--breakpoint_desktop)) {
+  :root {
+    --spacing-multiplier: 2;
+    --headings-multiplier: 1.5;
+  }
+}
+@media (min-width: var(--breakpoint_hd)) {
+  :root {
+    --spacing-multiplier: 2;
+    --headings-multiplier: 1.5;
+  }
+}
+
+/* >>= Breakpoint (Default) - Mobile =<< */
+.column {
+  --columns: 12; /* number of columns in the grid system */
+  --width: var(--width-mobile, 0); /* width of the element */
+
+  border: var(--color_accent_2) 2px solid;
+  border-radius: 8px;
+  padding: 16px;
+  flex-basis: calc(var(--width) / var(--columns) * 100%);
+}
+
+/* >>= Breakpoint - Tablet =<< */
+@media (min-width: 576px) {
+  .column {
+    --width-tablet: var(--width-mobile);
+    --width: var(--width-tablet);
+  }
+}
+
+/* >>= Breakpoint - Desktop =<< */
+@media (min-width: 768px) {
+  .column {
+    --width-desktop: var(--width-tablet);
+    --width: var(--width-desktop);
+  }
+}
+
+/* >>= Breakpoint - Ultra =<< */
+@media (min-width: 992px) {
+  .column {
+    --width-hd: var(--width-desktop);
+    --width: var(--width-hd);
+  }
+}

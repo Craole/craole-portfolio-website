@@ -1,0 +1,52 @@
+/* ------------------------------------------------------- */
+/* Display ----------------------------------------------- */
+/* ------------------------------------------------------- */
+@import url('./display/big-shoulders-display.css');
+/* 'Big Shoulders Display', cursive; */
+@import url('./display/big-shoulders-stencil-display.css');
+/* 'Big Shoulders Stencil Display', cursive; */
+@import url('./display/hepta-slab.css');
+/* 'Hepta Slab', cursive; */
+
+/* ------------------------------------------------------- */
+/* Handwriting ------------------------------------------- */
+/* ------------------------------------------------------- */
+@import url('./handwriting/caveat.css');
+/* 'Caveat', cursive; */
+@import url('./handwriting/dancing-script.css');
+/* 'Dancing Script', cursive; */
+@import url('./handwriting/satisfy.css');
+/* 'Satisfy', cursive; */
+
+/* ------------------------------------------------------- */
+/* Monospace --------------------------------------------- */
+/* ------------------------------------------------------- */
+/* Monospace */
+@import url('./monospace/fira-code.css');
+/* 'Fira Code', monospace; */
+@import url('./monospace/jetbrains-mono.css');
+/* 'JetBrains Mono', monospace; */
+
+/* ------------------------------------------------------- */
+/* Sans Serif -------------------------------------------- */
+/* ------------------------------------------------------- */
+@import url('./san-serif/big-shoulders-text.css');
+/* 'Big Shoulders Text', cursive; */
+@import url('./san-serif/josefin-sans.css');
+/* 'Josefin Sans', sans-serif; */
+@import url('./san-serif/oswald.css');
+/* 'Oswald', sans-serif; */
+@import url('./san-serif/raleway.css');
+/* 'Raleway', sans-serif; */
+@import url('./san-serif/roboto.css');
+/* 'Roboto', sans-serif; */
+
+/* ------------------------------------------------------- */
+/* Serif ------------------------------------------------- */
+/* ------------------------------------------------------- */
+@import url('./serif/cormorant-garamond.css');
+/* 'Cormorant Garamond', serif; */
+@import url('./serif/lora.css');
+/* 'Lora', serif; */
+@import url('./serif/playfair-display.css');
+/* 'Playfair Display', serif; */
